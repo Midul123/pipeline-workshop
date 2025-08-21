@@ -14,7 +14,7 @@ jobs:
     - name: checkout repository
       uses: actions/checkout@v3
     - name: install python to vm
-      uses: action/setup-python@v4.6.0
+      uses: actions/setup-python@v4.6.0
     - name: install our requirements
       run: pip install -r requirements.txt
     - name: run tests 
