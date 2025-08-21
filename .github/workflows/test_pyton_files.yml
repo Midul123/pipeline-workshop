@@ -5,16 +5,16 @@ on:
     branch:
       -main
 
-  jobs:
-    run_tests:
-      runs-on: ubuntu-latest
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
 
-    steps:
-    - name: checkout repository
-      uses: actions/checkout@v3
-    - name: install python to vm
-      uses: action/setup-python@v4.6.0
-    - name: install our requirements
-      run: pip install -r requirements.txt
-    - name: run tests 
-      run: pytest
+  steps:
+  - name: checkout repository
+    uses: actions/checkout@v3
+  - name: install python to vm
+    uses: action/setup-python@v4.6.0
+  - name: install our requirements
+    run: pip install -r requirements.txt
+  - name: run tests 
+    run: pytest
