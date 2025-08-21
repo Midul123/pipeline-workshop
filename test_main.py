@@ -2,4 +2,4 @@ from main import multiply
 
 
 def test_multiply():
-    assert 4 == multiply(9, 10)
+    assert 90 == multiply(9, 10)
