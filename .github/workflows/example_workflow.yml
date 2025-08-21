@@ -5,9 +5,8 @@ on:
       - main
 
 jobs:
-  example workflow: 
-    runs on: ubuntu-latest
-
+  example_workflow: 
+    runs-on: ubuntu-latest
     steps: 
-    - name: Say Hello
-      run: echo "Hello world"
+      - name: Say Hello
+        run: echo "Hello world"
